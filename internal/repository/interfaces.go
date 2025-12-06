@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/yourusername/go-gin-template/internal/model"
+	"go-gin-template/internal/model"
 )
 
 // UserRepository interface defines user repository operations

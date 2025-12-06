@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/pkg/cache"
+	"go-gin-template/pkg/cache"
 )
 
 // CacheConfig holds cache middleware configuration

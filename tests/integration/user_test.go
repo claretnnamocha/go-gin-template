@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
-	"github.com/yourusername/go-gin-template/internal/dto"
-	"github.com/yourusername/go-gin-template/internal/handler"
-	"github.com/yourusername/go-gin-template/internal/service"
-	"github.com/yourusername/go-gin-template/pkg/auth"
-	"github.com/yourusername/go-gin-template/pkg/response"
-	"github.com/yourusername/go-gin-template/tests/fixtures"
-	"github.com/yourusername/go-gin-template/tests/mocks"
+	"go-gin-template/internal/dto"
+	"go-gin-template/internal/handler"
+	"go-gin-template/internal/service"
+	"go-gin-template/pkg/auth"
+	"go-gin-template/pkg/response"
+	"go-gin-template/tests/fixtures"
+	"go-gin-template/tests/mocks"
 )
 
 // UserHandlerTestSuite defines the test suite for user handler

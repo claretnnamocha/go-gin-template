@@ -44,7 +44,7 @@ linters-settings:
     tab-width: 4
 
   goimports:
-    local-prefixes: github.com/yourusername/go-gin-template
+    local-prefixes: go-gin-template
 
   gocritic:
     enabled-tags:

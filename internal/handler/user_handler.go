@@ -5,11 +5,11 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/internal/dto"
-	"github.com/yourusername/go-gin-template/internal/middleware"
-	"github.com/yourusername/go-gin-template/internal/service"
-	"github.com/yourusername/go-gin-template/pkg/response"
-	"github.com/yourusername/go-gin-template/pkg/validator"
+	"go-gin-template/internal/dto"
+	"go-gin-template/internal/middleware"
+	"go-gin-template/internal/service"
+	"go-gin-template/pkg/response"
+	"go-gin-template/pkg/validator"
 )
 
 // UserHandler handles user-related HTTP requests

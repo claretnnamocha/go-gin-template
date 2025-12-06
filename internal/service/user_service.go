@@ -4,11 +4,11 @@ import (
 	"context"
 	"errors"
 
-	"github.com/yourusername/go-gin-template/internal/dto"
-	"github.com/yourusername/go-gin-template/internal/model"
-	"github.com/yourusername/go-gin-template/internal/repository"
-	"github.com/yourusername/go-gin-template/pkg/auth"
-	"github.com/yourusername/go-gin-template/pkg/utils"
+	"go-gin-template/internal/dto"
+	"go-gin-template/internal/model"
+	"go-gin-template/internal/repository"
+	"go-gin-template/pkg/auth"
+	"go-gin-template/pkg/utils"
 )
 
 // Common errors

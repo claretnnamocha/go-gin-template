@@ -7,8 +7,8 @@ import (
 	"runtime/debug"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/pkg/logger"
-	"github.com/yourusername/go-gin-template/pkg/response"
+	"go-gin-template/pkg/logger"
+	"go-gin-template/pkg/response"
 	"go.uber.org/zap"
 )
 

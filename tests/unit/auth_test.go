@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/go-gin-template/pkg/auth"
+	"go-gin-template/pkg/auth"
 )
 
 func TestJWTManager_GenerateAccessToken(t *testing.T) {

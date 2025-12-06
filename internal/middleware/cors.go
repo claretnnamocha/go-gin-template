@@ -3,7 +3,7 @@ package middleware
 import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/pkg/config"
+	"go-gin-template/pkg/config"
 )
 
 // CORS creates a CORS middleware with the given configuration

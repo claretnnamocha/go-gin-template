@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/go-gin-template/pkg/utils"
+	"go-gin-template/pkg/utils"
 )
 
 func TestHashPassword(t *testing.T) {

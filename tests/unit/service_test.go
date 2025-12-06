@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
-	"github.com/yourusername/go-gin-template/internal/dto"
-	"github.com/yourusername/go-gin-template/internal/service"
-	"github.com/yourusername/go-gin-template/pkg/auth"
-	"github.com/yourusername/go-gin-template/tests/fixtures"
-	"github.com/yourusername/go-gin-template/tests/mocks"
+	"go-gin-template/internal/dto"
+	"go-gin-template/internal/service"
+	"go-gin-template/pkg/auth"
+	"go-gin-template/tests/fixtures"
+	"go-gin-template/tests/mocks"
 )
 
 // UserServiceTestSuite defines the test suite for user service

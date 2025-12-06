@@ -8,7 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
-	"github.com/yourusername/go-gin-template/pkg/response"
+	"go-gin-template/pkg/response"
 )
 
 var (

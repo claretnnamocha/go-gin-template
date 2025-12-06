@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/pkg/cache"
-	"github.com/yourusername/go-gin-template/pkg/config"
-	"github.com/yourusername/go-gin-template/pkg/response"
+	"go-gin-template/pkg/cache"
+	"go-gin-template/pkg/config"
+	"go-gin-template/pkg/response"
 	"golang.org/x/time/rate"
 )
 

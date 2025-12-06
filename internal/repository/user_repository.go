@@ -5,8 +5,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/yourusername/go-gin-template/internal/model"
-	"github.com/yourusername/go-gin-template/pkg/database"
+	"go-gin-template/internal/model"
+	"go-gin-template/pkg/database"
 	"gorm.io/gorm"
 )
 

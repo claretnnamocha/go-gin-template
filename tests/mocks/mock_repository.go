@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/stretchr/testify/mock"
-	"github.com/yourusername/go-gin-template/internal/model"
-	"github.com/yourusername/go-gin-template/internal/repository"
+	"go-gin-template/internal/model"
+	"go-gin-template/internal/repository"
 )
 
 // MockUserRepository is a mock implementation of UserRepository

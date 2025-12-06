@@ -3,8 +3,8 @@ package fixtures
 import (
 	"time"
 
-	"github.com/yourusername/go-gin-template/internal/model"
-	"github.com/yourusername/go-gin-template/pkg/utils"
+	"go-gin-template/internal/model"
+	"go-gin-template/pkg/utils"
 )
 
 // TestUser creates a test user with default values

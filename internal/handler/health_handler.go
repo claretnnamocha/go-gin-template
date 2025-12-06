@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/pkg/cache"
-	"github.com/yourusername/go-gin-template/pkg/database"
-	"github.com/yourusername/go-gin-template/pkg/response"
+	"go-gin-template/pkg/cache"
+	"go-gin-template/pkg/database"
+	"go-gin-template/pkg/response"
 )
 
 // HealthStatus represents the health status of a service

@@ -5,10 +5,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/yourusername/go-gin-template/internal/model"
-	"github.com/yourusername/go-gin-template/pkg/config"
-	"github.com/yourusername/go-gin-template/pkg/database"
-	"github.com/yourusername/go-gin-template/pkg/utils"
+	"go-gin-template/internal/model"
+	"go-gin-template/pkg/config"
+	"go-gin-template/pkg/database"
+	"go-gin-template/pkg/utils"
 )
 
 func main() {

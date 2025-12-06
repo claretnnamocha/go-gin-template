@@ -1,4 +1,4 @@
-module github.com/yourusername/go-gin-template
+module go-gin-template
 
 go 1.23
 

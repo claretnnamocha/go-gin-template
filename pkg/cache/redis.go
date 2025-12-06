@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/redis/go-redis/v9"
-	"github.com/yourusername/go-gin-template/pkg/config"
-	"github.com/yourusername/go-gin-template/pkg/logger"
+	"go-gin-template/pkg/config"
+	"go-gin-template/pkg/logger"
 	"go.uber.org/zap"
 )
 

@@ -4,8 +4,8 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/go-gin-template/pkg/auth"
-	"github.com/yourusername/go-gin-template/pkg/response"
+	"go-gin-template/pkg/auth"
+	"go-gin-template/pkg/response"
 )
 
 // ContextKey is a type for context keys
