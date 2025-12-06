@@ -1,0 +1,180 @@
+# golangci-lint configuration
+# https://golangci-lint.run/usage/configuration/
+
+run:
+  timeout: 5m
+  issues-exit-code: 1
+  tests: true
+  skip-dirs:
+    - vendor
+    - testdata
+    - docs
+  skip-files:
+    - ".*_test.go$"
+
+output:
+  format: colored-line-number
+  print-issued-lines: true
+  print-linter-name: true
+  unique-by-line: true
+
+linters-settings:
+  errcheck:
+    check-type-assertions: true
+    check-blank: true
+
+  govet:
+    check-shadowing: true
+
+  gocyclo:
+    min-complexity: 15
+
+  dupl:
+    threshold: 150
+
+  goconst:
+    min-len: 3
+    min-occurrences: 3
+
+  misspell:
+    locale: US
+
+  lll:
+    line-length: 140
+    tab-width: 4
+
+  goimports:
+    local-prefixes: github.com/yourusername/go-gin-template
+
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+    disabled-checks:
+      - dupImport
+      - ifElseChain
+      - octalLiteral
+      - whyNoLint
+      - wrapperFunc
+
+  funlen:
+    lines: 100
+    statements: 50
+
+  gocognit:
+    min-complexity: 20
+
+  nestif:
+    min-complexity: 5
+
+  godox:
+    keywords:
+      - NOTE
+      - OPTIMIZE
+      - HACK
+
+  revive:
+    ignore-generated-header: true
+    severity: warning
+    rules:
+      - name: blank-imports
+      - name: context-as-argument
+      - name: context-keys-type
+      - name: dot-imports
+      - name: error-return
+      - name: error-strings
+      - name: error-naming
+      - name: exported
+      - name: increment-decrement
+      - name: var-naming
+      - name: var-declaration
+      - name: package-comments
+      - name: range
+      - name: receiver-naming
+      - name: time-naming
+      - name: unexported-return
+      - name: indent-error-flow
+      - name: errorf
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
+    - bodyclose
+    - dupl
+    - errorlint
+    - exhaustive
+    - exportloopref
+    - funlen
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - gofmt
+    - goimports
+    - goprintffuncname
+    - gosec
+    - lll
+    - misspell
+    - nakedret
+    - noctx
+    - nolintlint
+    - prealloc
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+    - stylecheck
+    - unconvert
+    - unparam
+    - whitespace
+
+issues:
+  exclude-rules:
+    # Exclude some linters from running on tests files
+    - path: _test\.go
+      linters:
+        - gocyclo
+        - errcheck
+        - dupl
+        - gosec
+        - funlen
+
+    # Exclude known linters from partially generated files
+    - path: docs/
+      linters:
+        - lll
+        - funlen
+        - gocyclo
+
+    # Exclude some staticcheck messages
+    - linters:
+        - staticcheck
+      text: "SA9003:"
+
+    # Exclude lll issues for long lines with go:generate
+    - linters:
+        - lll
+      source: "^//go:generate "
+
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  new: false
+
+severity:
+  default-severity: warning
+  case-sensitive: false
+  rules:
+    - linters:
+        - dupl
+      severity: info

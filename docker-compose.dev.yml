@@ -1,0 +1,16 @@
+# Development override - use with: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: go-api-dev
+    volumes:
+      - .:/app
+      - go-modules:/go/pkg/mod
+    environment:
+      - APP_ENV=development
+      - APP_DEBUG=true
+
+volumes:
+  go-modules:

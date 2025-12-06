@@ -1,0 +1,48 @@
+# Docker ignore file
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+bin/
+tmp/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test
+coverage/
+*.test
+*.out
+
+# Docs
+docs/*.md
+!docs/swagger.go
+
+# Misc
+*.log
+*.env
+!.env.example
+Makefile
+docker-compose.yml
+README.md
+LICENSE
+.editorconfig
+.golangci.yml
+
+# Test files
+tests/
+*_test.go

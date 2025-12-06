@@ -1,0 +1,26 @@
+# Development Dockerfile with hot reload
+FROM golang:1.23-alpine
+
+# Install build dependencies and tools
+RUN apk add --no-cache git ca-certificates tzdata curl
+
+# Install Air for hot reload
+RUN go install github.com/air-verse/air@v1.61.0
+
+# Install migrate tool (pinned to v4.17.0 for Go 1.23 compatibility)
+RUN go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@v4.17.0
+
+# Install golangci-lint
+RUN go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+
+# Install swag for swagger generation
+RUN go install github.com/swaggo/swag/cmd/swag@latest
+
+# Set working directory
+WORKDIR /app
+
+# Expose port
+EXPOSE 1954
+
+# Run go mod tidy on startup, then Air for hot reload
+CMD ["sh", "-c", "go mod tidy && air -c .air.toml"]

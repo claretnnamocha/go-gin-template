@@ -1,0 +1,50 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+tmp/
+
+# Test binary, built with go test -c
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage/
+
+# Dependency directories
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Build
+build/
+dist/
+
+# Air tmp
+tmp/
+
+# Generated docs (regenerate with make swagger)
+docs/docs.go
+docs/swagger.json
+docs/swagger.yaml
