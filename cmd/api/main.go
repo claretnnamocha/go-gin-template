@@ -73,9 +73,9 @@ func main() {
 	validator.Init()
 
 	// Configure Swagger dynamically
-	if cfg.IsProduction() {
-		docs.SwaggerInfo.Host = "" // Empty host uses current server URL
-		docs.SwaggerInfo.Schemes = []string{"https"}
+	if cfg.IsDevelopment() {
+		docs.SwaggerInfo.Host = fmt.Sprintf("localhost:%d", cfg.App.Port)
+		docs.SwaggerInfo.Schemes = []string{"http"}
 	}
 
 	// Initialize database
