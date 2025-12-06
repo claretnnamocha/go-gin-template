@@ -44,7 +44,7 @@ dist/
 # Air tmp
 tmp/
 
-# Generated docs (regenerate with make swagger)
-docs/docs.go
-docs/swagger.json
-docs/swagger.yaml
+# Generated docs - tracked for deployment
+# docs/docs.go
+# docs/swagger.json
+# docs/swagger.yaml
