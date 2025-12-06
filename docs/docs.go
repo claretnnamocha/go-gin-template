@@ -12,7 +12,6 @@ const docTemplate = `{
         "contact": {},
         "version": "{{.Version}}"
     },
-    "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
         "/auth/login": {

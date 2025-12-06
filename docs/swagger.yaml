@@ -105,7 +105,6 @@ definitions:
       success:
         type: boolean
     type: object
-host: ""
 info:
   contact: {}
   description: Go Gin REST API
