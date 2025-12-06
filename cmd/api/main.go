@@ -12,6 +12,7 @@ import (
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
+	"go-gin-template/docs"
 	"go-gin-template/internal/handler"
 	"go-gin-template/internal/middleware"
 	"go-gin-template/internal/model"
@@ -24,8 +25,6 @@ import (
 	"go-gin-template/pkg/logger"
 	"go-gin-template/pkg/validator"
 	"go.uber.org/zap"
-
-	_ "go-gin-template/docs"
 )
 
 // @title           API Documentation
@@ -72,6 +71,12 @@ func main() {
 
 	// Initialize validator
 	validator.Init()
+
+	// Configure Swagger dynamically
+	if cfg.IsProduction() {
+		docs.SwaggerInfo.Host = "" // Empty host uses current server URL
+		docs.SwaggerInfo.Schemes = []string{"https"}
+	}
 
 	// Initialize database
 	db, err := database.NewPostgresDB(cfg.Database)
