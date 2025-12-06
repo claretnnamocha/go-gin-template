@@ -27,19 +27,6 @@ import (
 	"go.uber.org/zap"
 )
 
-// @title           API Documentation
-// @version         1.0
-// @description     Go Gin REST API
-
-// @host            localhost:1954
-// @BasePath        /api/v1
-// @schemes         http https
-
-// @securityDefinitions.apikey BearerAuth
-// @in header
-// @name Authorization
-// @description Type "Bearer" followed by a space and JWT token.
-
 const (
 	Version = "1.0.0"
 )
